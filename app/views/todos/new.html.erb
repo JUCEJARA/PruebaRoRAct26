@@ -1,0 +1,19 @@
+
+<h1>   Hola primera pagina </h1>
+
+<div class="well well-lg">
+
+<%= form_with model: @todo do |f| %>
+<%= f.label :description, 'Descripcion' %>
+<%= f.text_field :description %>
+
+
+<%= f.label :content, 'Contenido' %>
+<%= f.text_field :content %>
+
+
+<%= f.submit "enviar" %>
+<% end %>
+
+
+</div>
