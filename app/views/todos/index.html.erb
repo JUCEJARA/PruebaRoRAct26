@@ -4,10 +4,9 @@
 
 <div class="well well-lg">
 
-<%= @todos.each do |todo| %>
+<% @todos.each do |todo| %>
 
-<%= todo.description %>
-<%= todo.completed %>
+<%= link_to todo.description, todo  %>
 
 <% end %>
 
